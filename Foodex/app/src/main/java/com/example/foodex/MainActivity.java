@@ -95,9 +95,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if(task.isSuccessful())
                 {
                     startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+                    progressBar.setVisibility(View.GONE);
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Failed to login! Please check your credentials!", Toast.LENGTH_SHORT).show();
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });
