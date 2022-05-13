@@ -3,13 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1195" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/bg_menu_item_selected.xml" value="0.2055" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/circle.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/circle_border.xml" value="0.1195" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/drawer_item.xml" value="0.2055" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2315" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_like.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1195" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_search.xml" value="0.2055" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_servings.xml" value="0.1195" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ic_time.xml" value="0.1195" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/ratingbar.xml" value="0.137" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/drawable/selector_menu.xml" value="0.2055" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/activity_forgot_password.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/activity_login_user.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/activity_main2.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/activity_profile.xml" value="0.264" />
@@ -19,10 +30,16 @@
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_dashboard.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_favorites.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_home.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_login.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_pantry.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_profile.xml" value="0.22780797101449277" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/fragment_shopping_list.xml" value="0.22780797101449277" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/list_random_recipe.xml" value="0.20606884057971014" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/nav_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/profile.xml" value="0.213768115942029" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/random_recipes.xml" value="0.20606884057971014" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/spinner_inner_text.xml" value="0.213768115942029" />
+        <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/spinner_text.xml" value="0.213768115942029" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/layout/toolbar.xml" value="0.1265625" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/menu/activity_main_drawer.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/ljusk/AndroidStudioProjects/Foodex/Foodex/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />

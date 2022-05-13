@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="email_address">Email Address</string>
+    <string name="full_name">Full Name</string>
+    <string name="log_out">LogOut</string>
+</resources>
