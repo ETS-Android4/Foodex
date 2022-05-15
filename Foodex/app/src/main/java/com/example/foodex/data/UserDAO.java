@@ -3,13 +3,10 @@ package com.example.foodex.data;
 import static android.content.ContentValues.TAG;
 
 import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.foodex.ui.ForgotPassword;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -21,6 +18,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.List;
+
 public class UserDAO {
     private static UserDAO instance;
     private MutableLiveData<String> authenticationMessage = new MutableLiveData<>();
@@ -28,6 +27,7 @@ public class UserDAO {
     private MutableLiveData<Boolean> completed = new MutableLiveData<>(false);
     private MutableLiveData<String> email = new MutableLiveData<>();
     private MutableLiveData<String> fullName = new MutableLiveData<>();
+    private MutableLiveData<List<String>> favorites = new MutableLiveData<>();
     private String userId;
     private DatabaseReference databaseReference;
     private FirebaseUser user;
@@ -35,6 +35,7 @@ public class UserDAO {
 
     public UserDAO() {
         mAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
     public static UserDAO getInstance() {
@@ -56,6 +57,10 @@ public class UserDAO {
 
     public MutableLiveData<Boolean> getCompleted() {
         return completed;
+    }
+
+    public MutableLiveData<List<String>> getFavorites() {
+        return favorites;
     }
 
     public void register(String email, String password, String fullName) {
@@ -174,5 +179,15 @@ public class UserDAO {
                 authenticationMessage.postValue("Something went wrong!");
             }
         });
+    }
+
+    public void addFavorite(String id)
+    {
+        user = mAuth.getCurrentUser();
+        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
+        userId = user.getUid();
+
+
+        databaseReference.child(userId).setValue(id);
     }
 }

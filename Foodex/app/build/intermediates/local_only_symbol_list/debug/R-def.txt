@@ -49,6 +49,7 @@ id forgotPassword
 id fragment_container
 id fullName
 id imageView_food
+id imageView_step_item
 id imgUser
 id nav_favorites
 id nav_home
@@ -59,7 +60,11 @@ id password
 id progressBar
 id random_list_container
 id recycler_ingredients
+id recycler_instruction_steps
+id recycler_instructions
 id recycler_random
+id recycler_step_equipment
+id recycler_step_ingredients
 id register
 id registerUser
 id resetPassword
@@ -68,11 +73,16 @@ id signOut
 id spinner_tags
 id textView_amount
 id textView_ingredient_name
+id textView_instruction_step_equipment
+id textView_instruction_step_ingredients
 id textView_likes
 id textView_meal_name
 id textView_meal_source
 id textView_meal_summary
 id textView_servings
+id textView_step_item
+id textView_step_number
+id textView_step_title
 id textView_time
 id textView_title
 layout activity_forgot_password
@@ -86,6 +96,9 @@ layout fragment_profile
 layout fragment_recipe_detail
 layout fragment_shopping_list
 layout list_ingredients
+layout list_instructions
+layout list_instructions_steps
+layout list_instructions_steps_items
 layout list_random_recipe
 layout spinner_inner_text
 layout spinner_text
@@ -96,6 +109,7 @@ string api_key
 string app_name
 string default_web_client_id
 string email_address
+string equipment
 string favorites
 string firebase_database_url
 string full_name
@@ -107,6 +121,7 @@ string google_storage_bucket
 string hello_blank_fragment
 string home
 string ingredients
+string instructions
 string log_out
 string pantry
 string profile

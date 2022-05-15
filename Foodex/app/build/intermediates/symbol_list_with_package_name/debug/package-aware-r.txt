@@ -2886,6 +2886,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView_food
+id imageView_step_item
 id imgUser
 id immediateStop
 id included
@@ -3025,7 +3026,11 @@ id random_list_container
 id ratio
 id rectangles
 id recycler_ingredients
+id recycler_instruction_steps
+id recycler_instructions
 id recycler_random
+id recycler_step_equipment
+id recycler_step_ingredients
 id register
 id registerUser
 id resetPassword
@@ -3131,11 +3136,16 @@ id textStart
 id textTop
 id textView_amount
 id textView_ingredient_name
+id textView_instruction_step_equipment
+id textView_instruction_step_ingredients
 id textView_likes
 id textView_meal_name
 id textView_meal_source
 id textView_meal_summary
 id textView_servings
+id textView_step_item
+id textView_step_number
+id textView_step_title
 id textView_time
 id textView_title
 id text_input_end_icon
@@ -3309,6 +3319,9 @@ layout fragment_profile
 layout fragment_recipe_detail
 layout fragment_shopping_list
 layout list_ingredients
+layout list_instructions
+layout list_instructions_steps
+layout list_instructions_steps_items
 layout list_random_recipe
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3460,6 +3473,7 @@ string common_signin_button_text
 string common_signin_button_text_long
 string default_web_client_id
 string email_address
+string equipment
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -3477,6 +3491,7 @@ string hide_bottom_view_on_scroll_behavior
 string home
 string icon_content_description
 string ingredients
+string instructions
 string item_view_role_description
 string label
 string log_out

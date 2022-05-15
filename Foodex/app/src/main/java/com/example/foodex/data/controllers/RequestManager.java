@@ -6,6 +6,8 @@ import android.util.Log;
 import com.example.foodex.R;
 import com.example.foodex.data.listeners.RandomRecipeResponseListener;
 import com.example.foodex.data.listeners.RecipeDetailsListener;
+import com.example.foodex.data.listeners.RecipeStepsListener;
+import com.example.foodex.data.models.RecipeStepsResponse;
 import com.example.foodex.data.models.RandomRecipeApiResponse;
 import com.example.foodex.data.models.RecipeDetailsResponse;
 
@@ -77,6 +79,28 @@ public class RequestManager {
         });
     }
 
+    public void getRecipeSteps(RecipeStepsListener listener, int id)
+    {
+        CallRecipeSteps callRecipeSteps = retrofit.create(CallRecipeSteps.class);
+        Call<List<RecipeStepsResponse>> call = callRecipeSteps.callRecipeSteps(id, context.getString(R.string.api_key));
+        call.enqueue(new Callback<List<RecipeStepsResponse>>() {
+            @Override
+            public void onResponse(Call<List<RecipeStepsResponse>> call, Response<List<RecipeStepsResponse>> response) {
+                if(!response.isSuccessful())
+                {
+                    listener.didError(response.message());
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+            }
+
+            @Override
+            public void onFailure(Call<List<RecipeStepsResponse>> call, Throwable t) {
+                listener.didError(t.getMessage());
+            }
+        });
+    }
+
     private interface CallRandomRecipes {
         @GET("recipes/random")
         Call<RandomRecipeApiResponse> callRandomRecipe(
@@ -89,6 +113,14 @@ public class RequestManager {
     private interface CallRecipeDetails {
         @GET("recipes/{id}/information")
         Call<RecipeDetailsResponse> callRecipeDetails(
+                @Path("id") int id,
+                @Query("apiKey") String apiKey
+        );
+    }
+
+    private interface CallRecipeSteps{
+        @GET("recipes/{id}/analyzedInstructions")
+        Call<List<RecipeStepsResponse>> callRecipeSteps(
                 @Path("id") int id,
                 @Query("apiKey") String apiKey
         );

@@ -28,6 +28,9 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
   public final RecyclerView recyclerIngredients;
 
   @NonNull
+  public final RecyclerView recyclerInstructions;
+
+  @NonNull
   public final TextView textViewMealName;
 
   @NonNull
@@ -38,11 +41,12 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
 
   private FragmentRecipeDetailBinding(@NonNull LinearLayout rootView,
       @NonNull ImageView imageViewFood, @NonNull RecyclerView recyclerIngredients,
-      @NonNull TextView textViewMealName, @NonNull TextView textViewMealSource,
-      @NonNull TextView textViewMealSummary) {
+      @NonNull RecyclerView recyclerInstructions, @NonNull TextView textViewMealName,
+      @NonNull TextView textViewMealSource, @NonNull TextView textViewMealSummary) {
     this.rootView = rootView;
     this.imageViewFood = imageViewFood;
     this.recyclerIngredients = recyclerIngredients;
+    this.recyclerInstructions = recyclerInstructions;
     this.textViewMealName = textViewMealName;
     this.textViewMealSource = textViewMealSource;
     this.textViewMealSummary = textViewMealSummary;
@@ -87,6 +91,12 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.recycler_instructions;
+      RecyclerView recyclerInstructions = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerInstructions == null) {
+        break missingId;
+      }
+
       id = R.id.textView_meal_name;
       TextView textViewMealName = ViewBindings.findChildViewById(rootView, id);
       if (textViewMealName == null) {
@@ -106,7 +116,8 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
       }
 
       return new FragmentRecipeDetailBinding((LinearLayout) rootView, imageViewFood,
-          recyclerIngredients, textViewMealName, textViewMealSource, textViewMealSummary);
+          recyclerIngredients, recyclerInstructions, textViewMealName, textViewMealSource,
+          textViewMealSummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

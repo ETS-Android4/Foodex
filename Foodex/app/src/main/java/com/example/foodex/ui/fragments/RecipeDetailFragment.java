@@ -18,21 +18,27 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodex.R;
 import com.example.foodex.data.adapters.IngredientsAdapter;
+import com.example.foodex.data.adapters.InstructionsAdapter;
 import com.example.foodex.data.listeners.RecipeDetailsListener;
+import com.example.foodex.data.listeners.RecipeStepsListener;
 import com.example.foodex.data.models.RecipeDetailsResponse;
 import com.example.foodex.data.controllers.RequestManager;
+import com.example.foodex.data.models.RecipeStepsResponse;
 import com.squareup.picasso.Picasso;
+
+import java.util.List;
 
 public class RecipeDetailFragment extends Fragment {
 
     int id;
     TextView textView_meal_name, textView_meal_source, textView_meal_summary;
     ImageView imageView_food;
-    RecyclerView recycler_ingredients;
+    RecyclerView recycler_ingredients, recycler_instructions;
     View view;
     RequestManager manager;
     ProgressDialog dialog;
     IngredientsAdapter adapter;
+    InstructionsAdapter instructionsAdapter;
 
     @Nullable
     @Override
@@ -45,6 +51,7 @@ public class RecipeDetailFragment extends Fragment {
 
         manager = new RequestManager(getActivity());
         manager.getRecipeDetails(listener, id);
+        manager.getRecipeSteps(recipeStepsListener, id);
 
         dialog = new ProgressDialog(getActivity());
         dialog.setTitle("Loading...");
@@ -60,6 +67,7 @@ public class RecipeDetailFragment extends Fragment {
         textView_meal_summary = view.findViewById(R.id.textView_meal_summary);
         imageView_food = view.findViewById(R.id.imageView_food);
         recycler_ingredients = view.findViewById(R.id.recycler_ingredients);
+        recycler_instructions = view.findViewById(R.id.recycler_instructions);
     }
 
     private final RecipeDetailsListener listener = new RecipeDetailsListener() {
@@ -80,6 +88,21 @@ public class RecipeDetailFragment extends Fragment {
         @Override
         public void didError(String message) {
             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private final RecipeStepsListener recipeStepsListener = new RecipeStepsListener() {
+        @Override
+        public void didFetch(List<RecipeStepsResponse> response, String message) {
+            recycler_instructions.setHasFixedSize(true);
+            recycler_instructions.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+            instructionsAdapter = new InstructionsAdapter(getActivity(), response);
+            recycler_instructions.setAdapter(instructionsAdapter);
+        }
+
+        @Override
+        public void didError(String message) {
+
         }
     };
 }

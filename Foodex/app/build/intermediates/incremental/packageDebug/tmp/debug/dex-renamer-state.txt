@@ -1,4 +1,4 @@
-#Sat May 14 19:25:12 CEST 2022
+#Sun May 15 22:12:24 CEST 2022
 path.4=classes2.dex
 path.3=11/classes.dex
 path.2=5/classes.dex
@@ -22,8 +22,8 @@ renamed.2=classes3.dex
 renamed.1=classes2.dex
 path.10=6/classes.dex
 renamed.0=classes.dex
-base.9=C\:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-path.9=10/classes.dex
+base.9=C\:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+path.9=1/classes.dex
 path.11=9/classes.dex
 renamed.7=classes8.dex
 base.8=C\:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex

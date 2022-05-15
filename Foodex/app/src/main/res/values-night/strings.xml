@@ -4,4 +4,7 @@
     <string name="full_name">Full Name</string>
     <string name="log_out">LogOut</string>
     <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="equipment">Equipment</string>
+
 </resources>
