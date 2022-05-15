@@ -20,6 +20,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.foodex.R;
 import com.example.foodex.data.User;
 import com.example.foodex.ui.LoginActivity;
+import com.example.foodex.ui.RegisterUser;
 import com.example.foodex.viewmodel.ProfileViewModel;
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -27,7 +28,6 @@ public class ProfileFragment extends Fragment {
 
     private ProfileViewModel profileViewModel;
 
-    User user;
     TextView email, fullName;
     ProgressBar progressBar;
     Button logout;
@@ -47,7 +47,7 @@ public class ProfileFragment extends Fragment {
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
+                profileViewModel.signOut();
                 Intent intent = new Intent(getActivity(), LoginActivity.class);
                 startActivity(intent);
             }

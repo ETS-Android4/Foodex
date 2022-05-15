@@ -44,6 +44,8 @@ public class UserDAO {
         return instance;
     }
 
+
+
     public MutableLiveData<String> getAuthenticationMessage() {
         return authenticationMessage;
     }

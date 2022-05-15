@@ -19,8 +19,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.foodex.R;
 import com.example.foodex.data.adapters.RandomRecipeAdapter;
 import com.example.foodex.data.listeners.RandomRecipeResponseListener;
+import com.example.foodex.data.listeners.RecipeClickListener;
 import com.example.foodex.data.models.RandomRecipeApiResponse;
-import com.example.foodex.data.persistence.RequestManager;
+import com.example.foodex.data.controllers.RequestManager;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
 
@@ -30,6 +34,8 @@ public class HomeFragment extends Fragment {
     RecyclerView recyclerView;
 
     Spinner spinner;
+
+    List<String> tags = new ArrayList<>();
 
     View view;
 
@@ -47,12 +53,13 @@ public class HomeFragment extends Fragment {
         ArrayAdapter arrayAdapter = ArrayAdapter.createFromResource(getActivity(), R.array.tags, R.layout.spinner_text);
         arrayAdapter.setDropDownViewResource(R.layout.spinner_inner_text);
         spinner.setAdapter(arrayAdapter);
+        spinner.setOnItemSelectedListener(spinnerListener);
 
         //API manager
         manager = new RequestManager(getActivity());
-        manager.getRandomRecipes(randomRecipeResponseListener);
-
-        dialog.show();
+//        manager.getRandomRecipes(randomRecipeResponseListener);
+//
+//        dialog.show();
         return view;
     }
 
@@ -63,7 +70,7 @@ public class HomeFragment extends Fragment {
             recyclerView = view.findViewById(R.id.recycler_random);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 1));
-            randomRecipeAdapter = new RandomRecipeAdapter(getActivity(), response.recipes);
+            randomRecipeAdapter = new RandomRecipeAdapter(getActivity(), response.recipes, recipeClickListener);
             recyclerView.setAdapter(randomRecipeAdapter);
         }
 
@@ -76,12 +83,29 @@ public class HomeFragment extends Fragment {
     private final AdapterView.OnItemSelectedListener spinnerListener = new AdapterView.OnItemSelectedListener() {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            //TODO spinner
+            tags.clear();
+            tags.add(parent.getSelectedItem().toString());
+            manager.getRandomRecipes(randomRecipeResponseListener, tags);
+            dialog.show();
         }
 
         @Override
         public void onNothingSelected(AdapterView<?> parent) {
-            //TODO spinner
+
+        }
+    };
+
+    private final RecipeClickListener recipeClickListener = new RecipeClickListener() {
+        @Override
+        public void onRecipeClicked(String id) {
+            RecipeDetailFragment nextFrag= new RecipeDetailFragment();
+            Bundle bundle = new Bundle();
+            bundle.putString("id", id);
+            nextFrag.setArguments(bundle);
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, nextFrag, "findThisFragment")
+                    .addToBackStack(null)
+                    .commit();
         }
     };
 }
