@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_pantry.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_pantry.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinner_text.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\spinner_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_register_user.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_register_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_user.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_login_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forgot_password.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_ingredients.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\list_ingredients.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_favorites.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinner_inner_text.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\spinner_inner_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_recipe_detail.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_recipe_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\list_random_recipe.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\list_random_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_shopping_list.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_shopping_list.xml"
+    }
+]

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="tags">
+        <item>main course</item>
+        <item>side dish</item>
+        <item>dessert</item>
+        <item>appetizer</item>
+        <item>salad</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>soup</item>
+        <item>beverage</item>
+        <item>sauce</item>
+        <item>marinade</item>
+        <item>fingerfood</item>
+        <item>snack</item>
+        <item>drink</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="colorPink">#E82D50</color>
+    <color name="colorPinkDark">#A8213A</color>
+    <color name="colorPinkTrans">#E6E82D50</color>
+    <color name="colorTextDark">#434B5B</color>
+    <color name="colorTextGrey">#8E939E</color>
+    <color name="colorWhiteTrans">#E6FFFFFF</color>
+    <color name="orange">#FF5722</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="solidCircle">#808080</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="h1">22dp</dimen>
+    <dimen name="h2">18dp</dimen>
+    <dimen name="h3">14dp</dimen>
+    <dimen name="space16">16dp</dimen>
+    <dimen name="space24">24dp</dimen>
+    <dimen name="space56">56dp</dimen>
+    <dimen name="space8">8dp</dimen>
+    <string name="api_key">52ac424c734740888509aff070a355ad</string>
+    <string name="app_name">Foodex</string>
+    <string name="default_web_client_id" translatable="false">300444481514-t8ibc52ktqucbu1pt1tdeh0qdnogtf4t.apps.googleusercontent.com</string>
+    <string name="email_address">Email Address</string>
+    <string name="favorites">Favorites</string>
+    <string name="firebase_database_url" translatable="false">https://foodex-d9520-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="full_name">Full Name</string>
+    <string name="gcm_defaultSenderId" translatable="false">300444481514</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6HhGJA1q8Ufn8MPpc4yrx4ju5TZLrJCI</string>
+    <string name="google_app_id" translatable="false">1:300444481514:android:f718e812d2f55388e52493</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6HhGJA1q8Ufn8MPpc4yrx4ju5TZLrJCI</string>
+    <string name="google_storage_bucket" translatable="false">foodex-d9520.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="log_out">LogOut</string>
+    <string name="pantry">Pantry</string>
+    <string name="profile">Profile</string>
+    <string name="project_id" translatable="false">foodex-d9520</string>
+    <string name="shopping_list">Shopping List</string>
+    <string name="title_activity_main">Main</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/colorPink</item>
+        <item name="colorPrimaryDark">@color/colorPink</item>
+        <item name="colorAccent">@color/colorPink</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+    <style name="Theme.Foodex" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>

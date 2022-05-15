@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_favorite_24.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_baseline_favorite_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_list_random_recipe.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\list_random_recipe.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_register_user.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_register_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_shopping_cart_24.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_baseline_shopping_cart_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_circle_border.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\circle_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_text.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\spinner_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_circle.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_recipe_detail.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_recipe_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_article_24.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_baseline_article_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_inner_text.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\spinner_inner_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_servings.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_servings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_pantry.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_pantry.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_favorites.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_favorites.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_time.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_list_ingredients.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\list_ingredients.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_shopping_list.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_shopping_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login_user.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\activity_login_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_like.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_like.xml"
+    }
+]

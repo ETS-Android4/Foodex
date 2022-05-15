@@ -1,0 +1,72 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\ljusk\\.gradle\\caches\\transforms-3\\7ea9d4dd9fbf950c2b9c282723653749\\transformed\\material-1.6.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,51,52,53,54,55,56,57,58",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1526,1601,1712,1801,1902,2009,2116,2215,2318,2406,2530,2632,2734,2850,2952,3066,3194,3310,3432,3568,3688,3822,3942,4054,4269,4386,4510,4640,4762,4900,5034,5150",
+                        "endColumns": "74,110,88,100,106,106,98,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1596,1707,1796,1897,2004,2111,2210,2313,2401,2525,2627,2729,2845,2947,3061,3189,3305,3427,3563,3683,3817,3937,4049,4175,4381,4505,4635,4757,4895,5029,5145,5265"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ljusk\\.gradle\\caches\\transforms-3\\f73bb7ba92c974a370fc87fec7127d0d\\transformed\\appcompat-1.4.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "6,7,8,9,10,11,12,50",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "299,369,453,537,633,735,837,4180",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "364,448,532,628,730,832,926,4264"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\values-night\\strings.xml",
+                    "from": {
+                        "startLines": "-1,-1,5,-1",
+                        "startColumns": "-1,-1,4,-1",
+                        "startOffsets": "-1,-1,207,-1",
+                        "endColumns": "-1,-1,51,-1",
+                        "endOffsets": "-1,-1,254,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "100,156,204,256",
+                        "endColumns": "55,47,51,42",
+                        "endOffsets": "151,199,251,294"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "-1",
+                        "startColumns": "-1",
+                        "startOffsets": "-1"
+                    },
+                    "to": {
+                        "startLines": "13",
+                        "startColumns": "4",
+                        "startOffsets": "931",
+                        "endLines": "25",
+                        "endColumns": "12",
+                        "endOffsets": "1521"
+                    }
+                }
+            ]
+        }
+    ]
+}
