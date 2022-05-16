@@ -1269,6 +1269,7 @@ color browser_actions_bg_grey
 color browser_actions_divider_color
 color browser_actions_text_color
 color browser_actions_title_color
+color button
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -2751,6 +2752,7 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
+id button_add_favorite
 id cache_measures
 id callMeasure
 id cancel_action
@@ -3025,6 +3027,7 @@ id radio
 id random_list_container
 id ratio
 id rectangles
+id recycler_favorites
 id recycler_ingredients
 id recycler_instruction_steps
 id recycler_instructions
@@ -3442,6 +3445,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_to_your_favorites
 string androidx_startup
 string api_key
 string app_name
@@ -3479,7 +3483,9 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string favorites
+string find_your_recipes_quickly
 string firebase_database_url
+string forgot_password
 string full_name
 string gcm_defaultSenderId
 string google_api_key
@@ -3495,6 +3501,7 @@ string instructions
 string item_view_role_description
 string label
 string log_out
+string login
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium
@@ -3569,6 +3576,7 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string pantry
+string password
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3576,6 +3584,8 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string profile
 string project_id
+string register
+string reset_password
 string search_menu_title
 string shopping_list
 string status_bar_notification_info_overflow

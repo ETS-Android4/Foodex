@@ -1,11 +1,13 @@
 package com.example.foodex.ui.fragments;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -24,6 +27,9 @@ import com.example.foodex.data.listeners.RecipeStepsListener;
 import com.example.foodex.data.models.RecipeDetailsResponse;
 import com.example.foodex.data.controllers.RequestManager;
 import com.example.foodex.data.models.RecipeStepsResponse;
+import com.example.foodex.ui.LoginActivity;
+import com.example.foodex.viewmodel.ProfileViewModel;
+import com.example.foodex.viewmodel.RecipeDetailViewModel;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -34,11 +40,14 @@ public class RecipeDetailFragment extends Fragment {
     TextView textView_meal_name, textView_meal_source, textView_meal_summary;
     ImageView imageView_food;
     RecyclerView recycler_ingredients, recycler_instructions;
+    Button button_add_favorite;
     View view;
     RequestManager manager;
     ProgressDialog dialog;
     IngredientsAdapter adapter;
     InstructionsAdapter instructionsAdapter;
+
+    RecipeDetailViewModel viewModel;
 
     @Nullable
     @Override
@@ -47,7 +56,16 @@ public class RecipeDetailFragment extends Fragment {
 
         id = Integer.parseInt(getArguments().getString("id"));
 
+        viewModel = new ViewModelProvider(this).get(RecipeDetailViewModel.class);
         findViews();
+
+        button_add_favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                viewModel.addFavorite(String.valueOf(id));
+                Toast.makeText(getActivity(), "Added", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         manager = new RequestManager(getActivity());
         manager.getRecipeDetails(listener, id);
@@ -68,6 +86,7 @@ public class RecipeDetailFragment extends Fragment {
         imageView_food = view.findViewById(R.id.imageView_food);
         recycler_ingredients = view.findViewById(R.id.recycler_ingredients);
         recycler_instructions = view.findViewById(R.id.recycler_instructions);
+        button_add_favorite = view.findViewById(R.id.button_add_favorite);
     }
 
     private final RecipeDetailsListener listener = new RecipeDetailsListener() {

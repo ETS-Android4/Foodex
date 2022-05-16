@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 array tags
 color black
+color button
 color colorPink
 color colorPinkDark
 color colorPinkTrans
@@ -44,6 +45,7 @@ drawable ic_time
 id banner
 id bannerDescription
 id bottom_navigation
+id button_add_favorite
 id email
 id forgotPassword
 id fragment_container
@@ -59,6 +61,7 @@ id nav_shopping_list
 id password
 id progressBar
 id random_list_container
+id recycler_favorites
 id recycler_ingredients
 id recycler_instruction_steps
 id recycler_instructions
@@ -105,13 +108,16 @@ layout spinner_text
 menu bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
+string add_to_your_favorites
 string api_key
 string app_name
 string default_web_client_id
 string email_address
 string equipment
 string favorites
+string find_your_recipes_quickly
 string firebase_database_url
+string forgot_password
 string full_name
 string gcm_defaultSenderId
 string google_api_key
@@ -123,9 +129,13 @@ string home
 string ingredients
 string instructions
 string log_out
+string login
 string pantry
+string password
 string profile
 string project_id
+string register
+string reset_password
 string shopping_list
 string title_activity_main
 style AppTheme

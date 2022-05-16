@@ -2,6 +2,7 @@ package com.example.foodex.data;
 
 import static android.content.ContentValues.TAG;
 
+import android.provider.ContactsContract;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -18,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class UserDAO {
     private static UserDAO instance;
@@ -27,15 +28,17 @@ public class UserDAO {
     private MutableLiveData<Boolean> completed = new MutableLiveData<>(false);
     private MutableLiveData<String> email = new MutableLiveData<>();
     private MutableLiveData<String> fullName = new MutableLiveData<>();
-    private MutableLiveData<List<String>> favorites = new MutableLiveData<>();
+    private MutableLiveData<ArrayList<String>> favorites = new MutableLiveData<>();
     private String userId;
     private DatabaseReference databaseReference;
+    private FirebaseDatabase database;
     private FirebaseUser user;
     private FirebaseAuth mAuth;
 
     public UserDAO() {
         mAuth = FirebaseAuth.getInstance();
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        database = FirebaseDatabase.getInstance();
+        databaseReference = database.getReference();
     }
 
     public static UserDAO getInstance() {
@@ -45,7 +48,10 @@ public class UserDAO {
         return instance;
     }
 
-
+    public MutableLiveData<ArrayList<String>> getFavoritesList()
+    {
+        return favorites;
+    }
 
     public MutableLiveData<String> getAuthenticationMessage() {
         return authenticationMessage;
@@ -59,9 +65,6 @@ public class UserDAO {
         return completed;
     }
 
-    public MutableLiveData<List<String>> getFavorites() {
-        return favorites;
-    }
 
     public void register(String email, String password, String fullName) {
         progressBar.setValue(true);
@@ -122,24 +125,20 @@ public class UserDAO {
         });
     }
 
-    public void signOut()
-    {
+    public void signOut() {
         FirebaseAuth.getInstance().signOut();
         completed.setValue(true);
     }
 
-    public void resetPassword(String email)
-    {
+    public void resetPassword(String email) {
         progressBar.setValue(true);
         mAuth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
-                if(task.isSuccessful())
-                {
+                if (task.isSuccessful()) {
                     authenticationMessage.postValue("Check your email to reset your password!");
                     progressBar.setValue(false);
-                }
-                else{
+                } else {
                     authenticationMessage.postValue("Try again! Something went wrong!");
                     progressBar.setValue(false);
                 }
@@ -151,13 +150,11 @@ public class UserDAO {
         return fullName;
     }
 
-    public MutableLiveData<String> getEmail()
-    {
+    public MutableLiveData<String> getEmail() {
         return email;
     }
 
-    public void getProfile()
-    {
+    public void getProfile() {
         user = mAuth.getCurrentUser();
         databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         userId = user.getUid();
@@ -167,8 +164,7 @@ public class UserDAO {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 User userProfile = snapshot.getValue(User.class);
 
-                if(userProfile !=null)
-                {
+                if (userProfile != null) {
                     fullName.postValue(userProfile.fullName);
                     email.postValue(userProfile.email);
                 }
@@ -181,13 +177,44 @@ public class UserDAO {
         });
     }
 
-    public void addFavorite(String id)
-    {
+    public void addFavorite(String id) {
         user = mAuth.getCurrentUser();
-        databaseReference = FirebaseDatabase.getInstance().getReference("Users");
         userId = user.getUid();
 
-
-        databaseReference.child(userId).setValue(id);
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("favorites").push().setValue(id).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    progressBar.setValue(false);
+                    authenticationMessage.setValue("Recipe has been added to your favorites list!");
+                    completed.setValue(true);
+                } else {
+                    progressBar.setValue(false);
+                    authenticationMessage.setValue("Something went wrong while adding this recipe to your favorites!");
+                }
+            }
+        });
     }
+
+    public void getFavorites() {
+
+        ArrayList<String> tempFavorites = new ArrayList<>();
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getUid()).child("favorites").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot: snapshot.getChildren())
+                {
+                    tempFavorites.add(dataSnapshot.getValue().toString());
+                }
+                favorites.setValue(tempFavorites);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                authenticationMessage.setValue("Something went wrong while getting your favorites!");
+            }
+        });
+
+    }
+
 }

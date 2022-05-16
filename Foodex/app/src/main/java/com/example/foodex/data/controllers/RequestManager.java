@@ -4,9 +4,11 @@ import android.content.Context;
 import android.util.Log;
 
 import com.example.foodex.R;
+import com.example.foodex.data.listeners.FavoriteRecipesResponseListener;
 import com.example.foodex.data.listeners.RandomRecipeResponseListener;
 import com.example.foodex.data.listeners.RecipeDetailsListener;
 import com.example.foodex.data.listeners.RecipeStepsListener;
+import com.example.foodex.data.models.FavoriteRecipesApiResponse;
 import com.example.foodex.data.models.RecipeStepsResponse;
 import com.example.foodex.data.models.RandomRecipeApiResponse;
 import com.example.foodex.data.models.RecipeDetailsResponse;
@@ -101,6 +103,32 @@ public class RequestManager {
         });
     }
 
+    public void getFavoriteRecipes(FavoriteRecipesResponseListener listener, String ids)
+    {
+        CallFavoriteRecipes callFavoriteRecipes = retrofit.create(CallFavoriteRecipes.class);
+        Log.e("FavoriteRecipe", "Starting the call for api!!!!");
+        Call<FavoriteRecipesApiResponse> call = callFavoriteRecipes.callFavoriteRecipes(ids, context.getString(R.string.api_key));
+        call.enqueue(new Callback<FavoriteRecipesApiResponse>() {
+            @Override
+            public void onResponse(Call<FavoriteRecipesApiResponse> call, Response<FavoriteRecipesApiResponse> response) {
+                if (!response.isSuccessful()) {
+                    listener.didError(response.message());
+                    Log.e("Recipe", "Not Successful!");
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+                Log.e("Recipe", "Successful!");
+            }
+
+            @Override
+            public void onFailure(Call<FavoriteRecipesApiResponse> call, Throwable t) {
+                listener.didError(t.getMessage());
+                Log.e("Recipe", "FAILURE FAVORITE RECIPE");
+            }
+        });
+    }
+
+
     private interface CallRandomRecipes {
         @GET("recipes/random")
         Call<RandomRecipeApiResponse> callRandomRecipe(
@@ -122,6 +150,14 @@ public class RequestManager {
         @GET("recipes/{id}/analyzedInstructions")
         Call<List<RecipeStepsResponse>> callRecipeSteps(
                 @Path("id") int id,
+                @Query("apiKey") String apiKey
+        );
+    }
+
+    private interface CallFavoriteRecipes{
+        @GET("recipes/informationBulk")
+        Call<FavoriteRecipesApiResponse> callFavoriteRecipes(
+                @Query(value = "ids", encoded = true) String ids,
                 @Query("apiKey") String apiKey
         );
     }

@@ -2,6 +2,8 @@ package com.example.foodex.data;
 
 import androidx.lifecycle.MutableLiveData;
 
+import java.util.ArrayList;
+
 public class UserRepository {
     private static UserRepository instance;
     private UserDAO userDAO;
@@ -62,5 +64,21 @@ public class UserRepository {
     {
         userDAO.getProfile();
     }
+
+    public void addFavorite(String id)
+    {
+        userDAO.addFavorite(id);
+    }
+
+    public MutableLiveData<ArrayList<String>> getFavoritesList()
+    {
+        return userDAO.getFavoritesList();
+    }
+
+    public void getFavorites()
+    {
+        userDAO.getFavorites();
+    }
+
 
 }

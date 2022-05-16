@@ -6,5 +6,12 @@
     <string name="ingredients">Ingredients</string>
     <string name="instructions">Instructions</string>
     <string name="equipment">Equipment</string>
+    <string name="find_your_recipes_quickly">Find your recipes quickly!</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="add_to_your_favorites">Add to your favorites</string>
 
 </resources>

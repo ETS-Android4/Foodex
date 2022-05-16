@@ -38,4 +38,7 @@ public class Recipe {
     public ArrayList<AnalyzedInstruction> analyzedInstructions;
     public Object originalId;
     public String spoonacularSourceUrl;
+
+    public int preparationMinutes;
+    public int cookingMinutes;
 }

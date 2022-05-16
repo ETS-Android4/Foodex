@@ -4,6 +4,7 @@ package com.example.foodex.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -20,6 +21,9 @@ import java.lang.String;
 public final class FragmentRecipeDetailBinding implements ViewBinding {
   @NonNull
   private final LinearLayout rootView;
+
+  @NonNull
+  public final Button buttonAddFavorite;
 
   @NonNull
   public final ImageView imageViewFood;
@@ -40,10 +44,12 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
   public final TextView textViewMealSummary;
 
   private FragmentRecipeDetailBinding(@NonNull LinearLayout rootView,
-      @NonNull ImageView imageViewFood, @NonNull RecyclerView recyclerIngredients,
-      @NonNull RecyclerView recyclerInstructions, @NonNull TextView textViewMealName,
-      @NonNull TextView textViewMealSource, @NonNull TextView textViewMealSummary) {
+      @NonNull Button buttonAddFavorite, @NonNull ImageView imageViewFood,
+      @NonNull RecyclerView recyclerIngredients, @NonNull RecyclerView recyclerInstructions,
+      @NonNull TextView textViewMealName, @NonNull TextView textViewMealSource,
+      @NonNull TextView textViewMealSummary) {
     this.rootView = rootView;
+    this.buttonAddFavorite = buttonAddFavorite;
     this.imageViewFood = imageViewFood;
     this.recyclerIngredients = recyclerIngredients;
     this.recyclerInstructions = recyclerInstructions;
@@ -79,6 +85,12 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button_add_favorite;
+      Button buttonAddFavorite = ViewBindings.findChildViewById(rootView, id);
+      if (buttonAddFavorite == null) {
+        break missingId;
+      }
+
       id = R.id.imageView_food;
       ImageView imageViewFood = ViewBindings.findChildViewById(rootView, id);
       if (imageViewFood == null) {
@@ -115,9 +127,9 @@ public final class FragmentRecipeDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentRecipeDetailBinding((LinearLayout) rootView, imageViewFood,
-          recyclerIngredients, recyclerInstructions, textViewMealName, textViewMealSource,
-          textViewMealSummary);
+      return new FragmentRecipeDetailBinding((LinearLayout) rootView, buttonAddFavorite,
+          imageViewFood, recyclerIngredients, recyclerInstructions, textViewMealName,
+          textViewMealSource, textViewMealSummary);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

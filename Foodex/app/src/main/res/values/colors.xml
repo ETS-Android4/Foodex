@@ -15,4 +15,5 @@
     <color name="colorWhiteTrans">#E6FFFFFF</color>
     <color name="orange">#FF5722</color>
     <color name="solidCircle">#808080</color>
+    <color name="button">#818181</color>
 </resources>
