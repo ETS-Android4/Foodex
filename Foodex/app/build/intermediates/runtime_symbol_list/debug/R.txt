@@ -2593,6 +2593,7 @@ int drawable ic_mtrl_chip_checked_black 0x7f08008c
 int drawable ic_mtrl_chip_checked_circle 0x7f08008d
 int drawable ic_mtrl_chip_close_circle 0x7f08008e
 int drawable ic_notifications_black_24dp 0x7f08008f
+int drawable ic_search 0x7f0800bf
 int drawable ic_servings 0x7f080090
 int drawable ic_time 0x7f080091
 int drawable m3_appbar_background 0x7f080092
@@ -2756,6 +2757,7 @@ int id cache_measures 0x7f09006e
 int id callMeasure 0x7f09006f
 int id cancel_action 0x7f090218
 int id cancel_button 0x7f090070
+int id cardView_items 0x7f090233
 int id carryVelocity 0x7f090071
 int id center 0x7f090072
 int id centerCrop 0x7f090073
@@ -3031,6 +3033,7 @@ int id recycler_ingredients 0x7f09021c
 int id recycler_instruction_steps 0x7f090223
 int id recycler_instructions 0x7f090224
 int id recycler_random 0x7f09017c
+int id recycler_search_ingredients 0x7f090232
 int id recycler_step_equipment 0x7f090225
 int id recycler_step_ingredients 0x7f090226
 int id register 0x7f09017d
@@ -3054,6 +3057,7 @@ int id scrollIndicatorDown 0x7f09018e
 int id scrollIndicatorUp 0x7f09018f
 int id scrollView 0x7f090190
 int id scrollable 0x7f090191
+int id searchView_pantry 0x7f090230
 int id search_badge 0x7f090192
 int id search_bar 0x7f090193
 int id search_button 0x7f090194
@@ -3144,6 +3148,7 @@ int id textView_likes 0x7f0901e3
 int id textView_meal_name 0x7f09021f
 int id textView_meal_source 0x7f090220
 int id textView_meal_summary 0x7f090221
+int id textView_search_title 0x7f090231
 int id textView_servings 0x7f0901e4
 int id textView_step_item 0x7f090228
 int id textView_step_number 0x7f090229
@@ -3316,6 +3321,7 @@ int layout design_text_input_end_icon 0x7f0c0030
 int layout design_text_input_start_icon 0x7f0c0031
 int layout fragment_favorites 0x7f0c0032
 int layout fragment_home 0x7f0c0033
+int layout fragment_ingredients_search 0x7f0c0092
 int layout fragment_pantry 0x7f0c0034
 int layout fragment_profile 0x7f0c0035
 int layout fragment_recipe_detail 0x7f0c0084
@@ -3497,6 +3503,7 @@ int string home 0x7f110047
 int string icon_content_description 0x7f110048
 int string ingredients 0x7f1100a2
 int string instructions 0x7f1100a3
+int string item 0x7f1100ac
 int string item_view_role_description 0x7f110049
 int string label 0x7f11004a
 int string log_out 0x7f11004b

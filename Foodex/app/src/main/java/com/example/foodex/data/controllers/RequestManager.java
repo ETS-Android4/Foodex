@@ -5,10 +5,12 @@ import android.util.Log;
 
 import com.example.foodex.R;
 import com.example.foodex.data.listeners.FavoriteRecipesResponseListener;
+import com.example.foodex.data.listeners.IngredientSearchResponseListener;
 import com.example.foodex.data.listeners.RandomRecipeResponseListener;
 import com.example.foodex.data.listeners.RecipeDetailsListener;
 import com.example.foodex.data.listeners.RecipeStepsListener;
 import com.example.foodex.data.models.FavoriteRecipesApiResponse;
+import com.example.foodex.data.models.IngredientSearchResponse;
 import com.example.foodex.data.models.RecipeStepsResponse;
 import com.example.foodex.data.models.RandomRecipeApiResponse;
 import com.example.foodex.data.models.RecipeDetailsResponse;
@@ -128,6 +130,32 @@ public class RequestManager {
         });
     }
 
+    public void getIngredientSearch(IngredientSearchResponseListener listener, String name)
+    {
+        CallIngredientSearch callIngredientSearch = retrofit.create(CallIngredientSearch.class);
+        Log.e("Pantry", "Starting the call for api!!!!");
+        Call<IngredientSearchResponse> call = callIngredientSearch.callIngredientSearch(name, context.getString(R.string.api_key));
+        call.enqueue(new Callback<IngredientSearchResponse>() {
+            @Override
+            public void onResponse(Call<IngredientSearchResponse> call, Response<IngredientSearchResponse> response) {
+                if(!response.isSuccessful())
+                {
+                    listener.didError(response.message());
+                    Log.e("Pantry", "Not Successful!");
+                    return;
+                }
+                listener.didFetch(response.body(), response.message());
+                Log.e("Pantry", "Successful!");
+            }
+
+            @Override
+            public void onFailure(Call<IngredientSearchResponse> call, Throwable t) {
+                listener.didError(t.getMessage());
+                Log.e("Pantry", "FAILURE SEARCH INGREDIENTS");
+            }
+        });
+    }
+
 
     private interface CallRandomRecipes {
         @GET("recipes/random")
@@ -158,6 +186,14 @@ public class RequestManager {
         @GET("recipes/informationBulk")
         Call<FavoriteRecipesApiResponse> callFavoriteRecipes(
                 @Query(value = "ids", encoded = true) String ids,
+                @Query("apiKey") String apiKey
+        );
+    }
+
+    private interface CallIngredientSearch{
+        @GET("food/ingredients/search")
+        Call<IngredientSearchResponse> callIngredientSearch(
+                @Query("query") String name,
                 @Query("apiKey") String apiKey
         );
     }

@@ -64,6 +64,10 @@
         "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\list_random_recipe.xml"
     },
     {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_ingredients_search.xml",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_ingredients_search.xml"
+    },
+    {
         "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_shopping_list.xml",
         "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_shopping_list.xml"
     }

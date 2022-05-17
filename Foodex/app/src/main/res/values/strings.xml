@@ -21,6 +21,7 @@
     <string name="register">Register</string>
     <string name="reset_password">Reset Password</string>
     <string name="add_to_your_favorites">Add to your favorites</string>
+    <string name="item">Item</string>
     <string-array name="tags">
         <item>main course</item>
         <item>side dish</item>
@@ -38,7 +39,6 @@
         <item>drink</item>
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
-
 
 
 </resources>

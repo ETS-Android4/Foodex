@@ -1,12 +1,11 @@
 package com.example.foodex.data;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
 
 public class User {
 
     public String fullName, email;
-    public List<String> favorites;
+    public HashMap<String, String> list;
 
     public User(){
 
@@ -16,15 +15,15 @@ public class User {
     {
         this.fullName = fullName;
         this.email = email;
-        this.favorites = new ArrayList<>();
+        this.list = new HashMap<>();
     }
 
-    public List<String> getFavorites() {
-        return favorites;
-    }
-
-    public void addFavorite(String id)
+    public User(String fullName, String email, HashMap<String, String> favorites)
     {
-        favorites.add(id);
+        this.fullName = fullName;
+        this.email = email;
+        this.list = favorites;
     }
+
+
 }

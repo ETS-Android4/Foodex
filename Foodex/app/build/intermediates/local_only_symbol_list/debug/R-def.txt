@@ -40,12 +40,14 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_like
 drawable ic_notifications_black_24dp
+drawable ic_search
 drawable ic_servings
 drawable ic_time
 id banner
 id bannerDescription
 id bottom_navigation
 id button_add_favorite
+id cardView_items
 id email
 id forgotPassword
 id fragment_container
@@ -66,11 +68,13 @@ id recycler_ingredients
 id recycler_instruction_steps
 id recycler_instructions
 id recycler_random
+id recycler_search_ingredients
 id recycler_step_equipment
 id recycler_step_ingredients
 id register
 id registerUser
 id resetPassword
+id searchView_pantry
 id signIn
 id signOut
 id spinner_tags
@@ -82,6 +86,7 @@ id textView_likes
 id textView_meal_name
 id textView_meal_source
 id textView_meal_summary
+id textView_search_title
 id textView_servings
 id textView_step_item
 id textView_step_number
@@ -94,6 +99,7 @@ layout activity_main
 layout activity_register_user
 layout fragment_favorites
 layout fragment_home
+layout fragment_ingredients_search
 layout fragment_pantry
 layout fragment_profile
 layout fragment_recipe_detail
@@ -128,6 +134,7 @@ string hello_blank_fragment
 string home
 string ingredients
 string instructions
+string item
 string log_out
 string login
 string pantry

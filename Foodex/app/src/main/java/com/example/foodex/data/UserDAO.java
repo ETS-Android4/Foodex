@@ -127,7 +127,7 @@ public class UserDAO {
 
     public void signOut() {
         FirebaseAuth.getInstance().signOut();
-        completed.setValue(true);
+        completed.setValue(false);
     }
 
     public void resetPassword(String email) {
@@ -191,6 +191,26 @@ public class UserDAO {
                 } else {
                     progressBar.setValue(false);
                     authenticationMessage.setValue("Something went wrong while adding this recipe to your favorites!");
+                }
+            }
+        });
+    }
+
+    public void addIngredient(String name, String image)
+    {
+        user = mAuth.getCurrentUser();
+        userId = user.getUid();
+
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("pantry").child(name).setValue(image).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    progressBar.setValue(false);
+                    authenticationMessage.setValue("Ingredient has been added to your Pantry!");
+                    completed.setValue(true);
+                } else {
+                    progressBar.setValue(false);
+                    authenticationMessage.setValue("Something went wrong while adding this ingredient to your Pantry!");
                 }
             }
         });

@@ -116,6 +116,10 @@
         "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_search.xml"
+    },
+    {
         "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_spinner_inner_text.xml.flat",
         "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\spinner_inner_text.xml"
     },
@@ -178,5 +182,9 @@
     {
         "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_like.xml.flat",
         "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\drawable\\ic_like.xml"
+    },
+    {
+        "merged": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_ingredients_search.xml.flat",
+        "source": "C:\\Users\\ljusk\\AndroidStudioProjects\\Foodex\\Foodex\\app\\src\\main\\res\\layout\\fragment_ingredients_search.xml"
     }
 ]

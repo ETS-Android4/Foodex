@@ -80,5 +80,10 @@ public class UserRepository {
         userDAO.getFavorites();
     }
 
+    public void addIngredient(String name, String image)
+    {
+        userDAO.addIngredient(name, image);
+    }
+
 
 }

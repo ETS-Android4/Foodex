@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/white"
     app:cardElevation="8dp"
-    android:layout_margin="6dp">
+    android:layout_margin="6dp"
+    android:id="@+id/cardView_items">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
 
         <TextView
             android:id="@+id/textView_step_item"
-            android:text="Item"
+            android:text="@string/item"
             android:textStyle="normal"
             android:textSize="18sp"
             android:textAlignment="center"
