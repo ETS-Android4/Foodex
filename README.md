@@ -7,6 +7,9 @@ A food recipe app, where the user will be able to find lots of recipes with inst
 ## Motivation behind the idea
 As a student, I have a fridge filled with food ingredients but dont know too much different ways to use them making meals. This application would help me with not having the same meals over and over again:)
 
+## Demonstration video
+https://youtu.be/CtFd9tBD23k
+
 ## Requirements
 
 ### Critical Priority
@@ -39,6 +42,10 @@ As a student, I have a fridge filled with food ingredients but dont know too muc
 - [x] 18. As a user, I want to see general information about the recipe, such that I would know the price per serving, nutrition information, etc.
 - [x] 19. As a user, I want to see an ingredient list that the recipe requires, such that I would know what it requires.
 
+
+References:
+1. A LOT of Youtube tutorials
+2. Slides and videos made by Kasper Knop Rasmussen
 
 
 
