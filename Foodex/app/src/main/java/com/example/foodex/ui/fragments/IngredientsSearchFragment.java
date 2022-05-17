@@ -21,7 +21,6 @@ import com.example.foodex.data.adapters.SearchIngredientsAdapter;
 import com.example.foodex.data.controllers.RequestManager;
 import com.example.foodex.data.listeners.IngredientClickListener;
 import com.example.foodex.data.listeners.IngredientSearchResponseListener;
-import com.example.foodex.data.models.Ingredient;
 import com.example.foodex.data.models.IngredientSearchResponse;
 import com.example.foodex.data.models.Result;
 import com.example.foodex.viewmodel.IngredientSearchViewModel;

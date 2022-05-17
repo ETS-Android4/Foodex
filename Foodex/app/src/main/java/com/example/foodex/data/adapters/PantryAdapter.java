@@ -12,7 +12,6 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodex.R;
-import com.example.foodex.data.listeners.IngredientClickListener;
 import com.example.foodex.data.models.Result;
 import com.squareup.picasso.Picasso;
 

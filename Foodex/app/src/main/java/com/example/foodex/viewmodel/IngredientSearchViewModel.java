@@ -8,7 +8,6 @@ import androidx.lifecycle.MutableLiveData;
 
 
 import com.example.foodex.data.UserRepository;
-import com.example.foodex.data.models.Ingredient;
 import com.example.foodex.data.models.Result;
 
 

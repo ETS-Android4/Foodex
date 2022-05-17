@@ -3546,6 +3546,7 @@ int string material_timepicker_minute 0x7f11006b
 int string material_timepicker_pm 0x7f11006c
 int string material_timepicker_select_time 0x7f11006d
 int string material_timepicker_text_input_mode_description 0x7f11006e
+int string menu 0x7f1100af
 int string mtrl_badge_numberless_content_description 0x7f11006f
 int string mtrl_chip_close_icon_content_description 0x7f110070
 int string mtrl_exceed_max_badge_number_content_description 0x7f110071

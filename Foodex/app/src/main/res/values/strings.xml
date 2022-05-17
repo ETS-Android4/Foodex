@@ -24,6 +24,7 @@
     <string name="item">Item</string>
     <string name="your_pantry">Your Pantry</string>
     <string name="get_recipes">Get Recipes</string>
+    <string name="menu">Menu</string>
     <string-array name="tags">
         <item>main course</item>
         <item>side dish</item>

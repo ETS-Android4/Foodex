@@ -132,6 +132,7 @@ public class UserDAO {
     }
 
     public void signOut() {
+        authenticationMessage.postValue("You have signed out");
         FirebaseAuth.getInstance().signOut();
         completed.setValue(false);
     }

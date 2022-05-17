@@ -1,7 +1,6 @@
 package com.example.foodex.ui.fragments;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
@@ -27,8 +26,6 @@ import com.example.foodex.data.listeners.RecipeStepsListener;
 import com.example.foodex.data.models.RecipeDetailsResponse;
 import com.example.foodex.data.controllers.RequestManager;
 import com.example.foodex.data.models.RecipeStepsResponse;
-import com.example.foodex.ui.LoginActivity;
-import com.example.foodex.viewmodel.ProfileViewModel;
 import com.example.foodex.viewmodel.RecipeDetailViewModel;
 import com.squareup.picasso.Picasso;
 

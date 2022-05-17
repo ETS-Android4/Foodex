@@ -2,7 +2,6 @@ package com.example.foodex.data;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.example.foodex.data.models.Ingredient;
 import com.example.foodex.data.models.Result;
 
 import java.util.ArrayList;

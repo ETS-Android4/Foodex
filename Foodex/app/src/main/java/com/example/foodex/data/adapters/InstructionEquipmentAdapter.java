@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodex.R;
 import com.example.foodex.data.models.Equipment;
-import com.example.foodex.data.models.Ingredient;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

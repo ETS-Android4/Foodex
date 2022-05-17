@@ -140,6 +140,7 @@ string instructions
 string item
 string log_out
 string login
+string menu
 string pantry
 string password
 string profile

@@ -121,33 +121,6 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
         }
 
         progressBar.setVisibility(View.VISIBLE);
-//        mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(RegisterUser.this, new OnCompleteListener<AuthResult>() {
-//            @Override
-//            public void onComplete(@NonNull Task<AuthResult> task) {
-//                progressBar.setVisibility(View.VISIBLE);
-//                if (task.isSuccessful()) {
-//                    User user = new User(fullName, email);
-//
-//                    FirebaseDatabase.getInstance().getReference("Users")
-//                            .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(user)
-//                            .addOnCompleteListener(new OnCompleteListener<Void>() {
-//                                @Override
-//                                public void onComplete(@NonNull Task<Void> task) {
-//                                    if (task.isSuccessful()) {
-//                                        Toast.makeText(RegisterUser.this, "User has been registered successfully!", Toast.LENGTH_LONG).show();
-//                                        progressBar.setVisibility(View.GONE);
-//                                    } else {
-//                                        Toast.makeText(RegisterUser.this, "Failed to register! Try again!", Toast.LENGTH_LONG).show();
-//                                        progressBar.setVisibility(View.GONE);
-//                                    }
-//                                }
-//                            });
-//                } else {
-//                    Toast.makeText(RegisterUser.this, "Failed to register the user! Try again!", Toast.LENGTH_LONG).show();
-//                    progressBar.setVisibility(View.GONE);
-//                }
-//            }
-//        });
         registerViewModel.register(email, password, fullName);
     }
 }
