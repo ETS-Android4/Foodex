@@ -5,4 +5,5 @@ public class Ingredient {
     public String name;
     public String localizedName;
     public String image;
+
 }

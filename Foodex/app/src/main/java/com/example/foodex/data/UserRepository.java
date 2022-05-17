@@ -2,6 +2,9 @@ package com.example.foodex.data;
 
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.foodex.data.models.Ingredient;
+import com.example.foodex.data.models.Result;
+
 import java.util.ArrayList;
 
 public class UserRepository {
@@ -80,9 +83,18 @@ public class UserRepository {
         userDAO.getFavorites();
     }
 
-    public void addIngredient(String name, String image)
+    public void addIngredient(Result ingredient)
     {
-        userDAO.addIngredient(name, image);
+        userDAO.addIngredient(ingredient);
+    }
+    public MutableLiveData<ArrayList<Result>> getPantryList()
+    {
+        return userDAO.getPantryList();
+    }
+
+    public void getPantry()
+    {
+        userDAO.getPantry();
     }
 
 

@@ -57,9 +57,7 @@ public class HomeFragment extends Fragment {
 
         //API manager
         manager = new RequestManager(getActivity());
-//        manager.getRandomRecipes(randomRecipeResponseListener);
-//
-//        dialog.show();
+
         return view;
     }
 

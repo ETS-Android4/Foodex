@@ -8,6 +8,8 @@ import androidx.lifecycle.MutableLiveData;
 
 
 import com.example.foodex.data.UserRepository;
+import com.example.foodex.data.models.Ingredient;
+import com.example.foodex.data.models.Result;
 
 
 public class IngredientSearchViewModel extends AndroidViewModel {
@@ -29,9 +31,9 @@ public class IngredientSearchViewModel extends AndroidViewModel {
 
 
 
-    public void addIngredient(String name, String image)
+    public void addIngredient(Result ingredient)
     {
-        userRepository.addIngredient(name, image);
+        userRepository.addIngredient(ingredient);
     }
 
 

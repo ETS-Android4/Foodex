@@ -1,5 +1,8 @@
 package com.example.foodex.data.listeners;
 
+import com.example.foodex.data.models.Ingredient;
+import com.example.foodex.data.models.Result;
+
 public interface IngredientClickListener {
-    void onIngredientClick(String name, String image);
+    void onIngredientClick(Result ingredient);
 }

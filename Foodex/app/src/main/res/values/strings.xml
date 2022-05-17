@@ -22,6 +22,8 @@
     <string name="reset_password">Reset Password</string>
     <string name="add_to_your_favorites">Add to your favorites</string>
     <string name="item">Item</string>
+    <string name="your_pantry">Your Pantry</string>
+    <string name="get_recipes">Get Recipes</string>
     <string-array name="tags">
         <item>main course</item>
         <item>side dish</item>

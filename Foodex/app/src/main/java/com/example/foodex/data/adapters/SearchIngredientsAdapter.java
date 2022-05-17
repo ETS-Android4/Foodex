@@ -45,7 +45,8 @@ public class SearchIngredientsAdapter extends RecyclerView.Adapter<SearchIngredi
         holder.cardView_items.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                listener.onIngredientClick(String.valueOf(list.get(holder.getAdapterPosition()).name), String.valueOf(list.get(holder.getAdapterPosition()).image));
+//                listener.onIngredientClick(String.valueOf(list.get(holder.getAdapterPosition()).name), String.valueOf(list.get(holder.getAdapterPosition()).image));
+                listener.onIngredientClick(list.get(holder.getAbsoluteAdapterPosition()));
             }
         });
     }

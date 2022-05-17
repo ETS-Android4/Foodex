@@ -4,10 +4,12 @@ package com.example.foodex.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.foodex.R;
@@ -20,11 +22,19 @@ public final class FragmentPantryBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final Button buttonPantryRecipes;
+
+  @NonNull
+  public final RecyclerView recyclerPantry;
+
+  @NonNull
   public final SearchView searchViewPantry;
 
-  private FragmentPantryBinding(@NonNull LinearLayout rootView,
-      @NonNull SearchView searchViewPantry) {
+  private FragmentPantryBinding(@NonNull LinearLayout rootView, @NonNull Button buttonPantryRecipes,
+      @NonNull RecyclerView recyclerPantry, @NonNull SearchView searchViewPantry) {
     this.rootView = rootView;
+    this.buttonPantryRecipes = buttonPantryRecipes;
+    this.recyclerPantry = recyclerPantry;
     this.searchViewPantry = searchViewPantry;
   }
 
@@ -55,13 +65,26 @@ public final class FragmentPantryBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.button_pantry_recipes;
+      Button buttonPantryRecipes = ViewBindings.findChildViewById(rootView, id);
+      if (buttonPantryRecipes == null) {
+        break missingId;
+      }
+
+      id = R.id.recycler_pantry;
+      RecyclerView recyclerPantry = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerPantry == null) {
+        break missingId;
+      }
+
       id = R.id.searchView_pantry;
       SearchView searchViewPantry = ViewBindings.findChildViewById(rootView, id);
       if (searchViewPantry == null) {
         break missingId;
       }
 
-      return new FragmentPantryBinding((LinearLayout) rootView, searchViewPantry);
+      return new FragmentPantryBinding((LinearLayout) rootView, buttonPantryRecipes, recyclerPantry,
+          searchViewPantry);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

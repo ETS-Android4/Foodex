@@ -2,12 +2,12 @@ package com.example.foodex.data;
 
 import static android.content.ContentValues.TAG;
 
-import android.provider.ContactsContract;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 
+import com.example.foodex.data.models.Result;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -29,6 +29,7 @@ public class UserDAO {
     private MutableLiveData<String> email = new MutableLiveData<>();
     private MutableLiveData<String> fullName = new MutableLiveData<>();
     private MutableLiveData<ArrayList<String>> favorites = new MutableLiveData<>();
+    private MutableLiveData<ArrayList<Result>> pantryList = new MutableLiveData<>();
     private String userId;
     private DatabaseReference databaseReference;
     private FirebaseDatabase database;
@@ -63,6 +64,11 @@ public class UserDAO {
 
     public MutableLiveData<Boolean> getCompleted() {
         return completed;
+    }
+
+    public MutableLiveData<ArrayList<Result>> getPantryList()
+    {
+        return pantryList;
     }
 
 
@@ -196,12 +202,12 @@ public class UserDAO {
         });
     }
 
-    public void addIngredient(String name, String image)
+    public void addIngredient(Result ingredient)
     {
         user = mAuth.getCurrentUser();
         userId = user.getUid();
 
-        databaseReference.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("pantry").child(name).setValue(image).addOnCompleteListener(new OnCompleteListener<Void>() {
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("pantry").push().setValue(ingredient).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()) {
@@ -232,6 +238,28 @@ public class UserDAO {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 authenticationMessage.setValue("Something went wrong while getting your favorites!");
+            }
+        });
+
+    }
+
+    public void getPantry()
+    {
+        ArrayList<Result> tempPantry = new ArrayList<>();
+        databaseReference.child("Users").child(FirebaseAuth.getInstance().getUid()).child("pantry").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot: snapshot.getChildren())
+                {
+                    Result tempI = dataSnapshot.getValue(Result.class);
+                    tempPantry.add(tempI);
+                }
+                pantryList.setValue(tempPantry);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                authenticationMessage.setValue("Something went wrong while getting your pantry!");
             }
         });
 

@@ -54,6 +54,7 @@
     <string name="forgot_password">Forgot password?</string>
     <string name="full_name">Full Name</string>
     <string name="gcm_defaultSenderId" translatable="false">300444481514</string>
+    <string name="get_recipes">Get Recipes</string>
     <string name="google_api_key" translatable="false">AIzaSyA6HhGJA1q8Ufn8MPpc4yrx4ju5TZLrJCI</string>
     <string name="google_app_id" translatable="false">1:300444481514:android:f718e812d2f55388e52493</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6HhGJA1q8Ufn8MPpc4yrx4ju5TZLrJCI</string>
@@ -73,6 +74,7 @@
     <string name="reset_password">Reset Password</string>
     <string name="shopping_list">Shopping List</string>
     <string name="title_activity_main">Main</string>
+    <string name="your_pantry">Your Pantry</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPink</item>

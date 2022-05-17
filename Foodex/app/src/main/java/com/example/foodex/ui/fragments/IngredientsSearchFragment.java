@@ -21,8 +21,9 @@ import com.example.foodex.data.adapters.SearchIngredientsAdapter;
 import com.example.foodex.data.controllers.RequestManager;
 import com.example.foodex.data.listeners.IngredientClickListener;
 import com.example.foodex.data.listeners.IngredientSearchResponseListener;
+import com.example.foodex.data.models.Ingredient;
 import com.example.foodex.data.models.IngredientSearchResponse;
-import com.example.foodex.viewmodel.FavoritesViewModel;
+import com.example.foodex.data.models.Result;
 import com.example.foodex.viewmodel.IngredientSearchViewModel;
 
 public class IngredientsSearchFragment extends Fragment {
@@ -79,9 +80,9 @@ public class IngredientsSearchFragment extends Fragment {
 
     private final IngredientClickListener ingredientClickListener = new IngredientClickListener() {
         @Override
-        public void onIngredientClick(String name, String image) {
-            viewModel.addIngredient(name, image);
-            Toast.makeText(getActivity(), name + " has been added to your pantry!", Toast.LENGTH_SHORT).show();
+        public void onIngredientClick(Result ingredient) {
+            viewModel.addIngredient(ingredient);
+            Toast.makeText(getActivity(), ingredient.name + " has been added to your pantry!", Toast.LENGTH_SHORT).show();
         }
     };
 }

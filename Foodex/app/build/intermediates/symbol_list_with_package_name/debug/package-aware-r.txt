@@ -2754,6 +2754,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
 id button_add_favorite
+id button_pantry_recipes
 id cache_measures
 id callMeasure
 id cancel_action
@@ -3033,6 +3034,7 @@ id recycler_favorites
 id recycler_ingredients
 id recycler_instruction_steps
 id recycler_instructions
+id recycler_pantry
 id recycler_random
 id recycler_search_ingredients
 id recycler_step_equipment
@@ -3494,6 +3496,7 @@ string firebase_database_url
 string forgot_password
 string full_name
 string gcm_defaultSenderId
+string get_recipes
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -3597,6 +3600,7 @@ string search_menu_title
 string shopping_list
 string status_bar_notification_info_overflow
 string title_activity_main
+string your_pantry
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
