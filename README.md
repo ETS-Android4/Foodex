@@ -27,12 +27,12 @@ As a student, I have a fridge filled with food ingredients but dont know too muc
 - [x] 10. As a user, I want to be able to save my recipes, such that I could access them later easily.
 - [ ] 11. As a user, I want to be able to see my saved recipes, such that I could use them.
 - [ ] 12. As a user, I want to be able to add the ingredients to my shopping list, so that I would not forget to buy them at the shop.
+- [x] 13. As a user, I want to be able to reset my password, such that I would not lose my account in case I forget the password.
+- [x] 14. As a user, I want to be able to see my profile information, such that I could see my credentials.
 
 
 ### Low priority
 
-- [x] 13. As a user, I want to be able to reset my password, such that I would not lose my account in case I forget the password.
-- [x] 14. As a user, I want to be able to see my profile information, such that I could see my credentials.
 - [x] 15. As a user, I want to be able to see how many likes a recipe has, such that I would know which recipes are good.
 - [x] 16. As a user, I want to be able to see how many servings the recipe provides, such that I would know how many ingredients to buy.
 - [x] 17. As a user, I want to be able to see the preparation time of a recipe, such that I would know how much time it takes to make.
